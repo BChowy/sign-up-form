@@ -32,3 +32,13 @@ body {
   margin: auto;
   color: white;
 }
+
+.container {
+  display: flex;
+  background-color: var(--color-grey);
+}
+
+.left-banner img {
+  max-height: 100vh;
+}
+
