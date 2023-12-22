@@ -124,3 +124,19 @@ button {
 .sign-in {
   font-size: var(--font-normal);
 }
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem;
+  font-weight: 100;
+  font-size: var(--font-small);
+}
+
+a {
+  color: var(--color-white);
+}
