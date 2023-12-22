@@ -59,6 +59,22 @@ body {
   background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
+.container .left-banner {
+  position: relative;
+}
+
+.left-banner .overlay-text {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin: auto;
+  color: var(--color-white);
+  font-size: var(--font-big);
+  font-style: italic;
+}
+
 .left-banner img {
   max-height: 100vh;
   box-shadow: 10px 0 20px black;
