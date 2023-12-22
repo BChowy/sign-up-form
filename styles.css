@@ -42,6 +42,29 @@ body {
   max-height: 100vh;
 }
 
+.right-banner {
+  /* text-align: center; */
+  margin: auto;
+}
+
+.right-banner .details {
+  min-height: 100vh;
+  position: relative;
+  top: 8.8vh;
+  margin: 0 10vw;
+}
+
+.details .headline {
+  margin: 0;
+  margin-bottom: 5.3vh;
+  font-size: var(--font-headline);
+}
+
+.headline .highlight {
+  color: var(--color-red);
+  font-style: italic;
+}
+
 form div {
   display: flex;
   flex-direction: column;
