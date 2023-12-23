@@ -25,15 +25,15 @@
                 <form action="#" method="post">
                     <div>
                         <label for="fight-name">Fight Name</label>
-                        <input id="fight-name" type="text" name="fight-name" required>
+                        <input id="fight-name" type="text" name="fight-name" placeholder="soap-scrapper" pattern="^[A-Za-z0-9_-]{1,15}$" minlength="5" maxlength="15" required>
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input id="email" type="email" name="email" required>
+                        <input id="email" type="email" name="email" placeholder="fight@club.com" required>
                     </div>
                     <div>
                         <label for="password">Password</label>
-                        <input id="password" type="password" name="password" required>
+                        <input id="password" type="password" name="password" placeholder="Must have at least 8 characters" pattern="^(?=.*\d)(?=.*[a-z])(?!.*\s).*$" minlength="8" required>
                     </div>
                     <div>
                         <label for="password-confirmation">Confirm Password</label>
