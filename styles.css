@@ -56,6 +56,12 @@ body {
   background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
 }
 
+.container {
+  display: flex;
+}
+
+/* ----------- left side ------------ */
+
 .left-banner {
   position: relative;
 }
@@ -77,6 +83,8 @@ body {
   max-width: 50vw;
   box-shadow: 10px 0 20px black;
 }
+
+/* ----------- right side ------------ */
 
 .right-banner {
   /* text-align: center; */
@@ -153,6 +161,8 @@ button {
   font-size: var(--font-normal);
 }
 
+/* ----------- footer section ------------ */
+
 footer {
   position: absolute;
   left: 0;
@@ -160,11 +170,24 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  margin: 0.75rem;
+  margin: 0.5rem;
   font-weight: 100;
   font-size: var(--font-small);
 }
 
 a {
   color: var(--color-white);
+}
+
+/* ----------- pseudo section ------------ */
+
+button:hover {
+  color: var(--color-white);
+  background: var(--color-red);
+}
+
+button:active {
+  color: var(--color-red);
+  background: var(--color-white);
+  border-color: var(--color-white);
 }
