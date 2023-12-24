@@ -116,14 +116,26 @@ form label {
   margin: 0 0 12px;
 }
 
-form input {
+form .input-box {
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.input-box input {
+  flex-grow: 1;
   height: 5vh;
   padding: 0px 10px;
   background: transparent;
   color: white;
   border-radius: 16px;
   border: 1px solid var(--color-light-grey);
+}
+
+.input-box img {
+  height: 3.5vh;
+  visibility: hidden;
 }
 
 button {
