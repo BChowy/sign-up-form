@@ -13,6 +13,8 @@ const
 
 let fieldNum;
 let isInputsValid = false;
+let isPasswordMatch = false;
+
 INPUT_FIELDS.forEach(field => {
     field.addEventListener('keyup', (e) => {
         fieldNum = Array.prototype.indexOf.call(INPUT_FIELDS, e.target);
@@ -27,10 +29,22 @@ function checkInput(input, regex, message) {
         return false;
     }
 }
+
+function comparePasswords(password, confirm_password) {
+    if (password === confirm_password && confirm_password !== '') {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 function validate() {
     if (INPUT_FIELDS[fieldNum].value === '')
         return false;
     if (fieldNum < 3)
-        isInputsValid = checkInput(INPUT_FIELDS[fieldNum].value, REGEX_LIST[fieldNum]);
-    return isInputsValid;
+        isInputsValid = checkInput(INPUT_FIELDS[fieldNum].value, REGEX_LIST[fieldNum], MESSAGE_LIST[fieldNum]);
+    if (fieldNum === 3)
+        isPasswordMatch = comparePasswords(PASSWORD.value, CONFIRM_PASSWORD.value);
+    return isInputsValid && isPasswordMatch;
 }
+
