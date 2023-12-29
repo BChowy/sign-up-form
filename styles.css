@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Libre+Bodoni&display=swap');
 
 :root {
   --color-red: #fe2b2c;
@@ -21,7 +21,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bodoni", "Franklin Gothic Medium", "Arial Narrow", Arial,
+  font-family: "Bodoni Moda", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
 }
 
