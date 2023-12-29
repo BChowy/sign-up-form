@@ -28,10 +28,6 @@
 body {
   overflow: hidden;
   color: white;
-}
-
-.container {
-  display: flex;
   background-color: var(--color-grey);
   opacity: 1;
   background: radial-gradient(
@@ -102,7 +98,7 @@ body {
 
 .details .headline {
   margin: 0;
-  margin-bottom: 5.3vh;
+  margin-bottom: 4vh;
   font-size: var(--font-headline);
 }
 
@@ -123,7 +119,6 @@ form > div {
 }
 
 form label {
-  font-size: var(--font-normal);
   color: var(--color-light-grey);
   margin: 0 0 12px;
 }
@@ -132,7 +127,6 @@ form .input-box {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 1vw;
 }
 
 .input-field {
@@ -165,12 +159,11 @@ form .input-box {
 button {
   width: 12.7vw;
   height: 5vh;
-  margin: 3.9vh 0;
-  font-size: var(--font-normal);
-  color: var(--color-red);
+  margin-bottom: 3.5vh;
+  color: var(--color-white);
   border-radius: 16px;
   border-color: var(--color-red);
-  background: transparent;
+  background: var(--color-red);
 }
 
 .sign-in {
@@ -196,11 +189,6 @@ a {
 }
 
 /* ----------- pseudo section ------------ */
-
-button:hover {
-  color: var(--color-white);
-  background: var(--color-red);
-}
 
 button:active {
   color: var(--color-red);
