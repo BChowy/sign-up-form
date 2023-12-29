@@ -1,7 +1,7 @@
 # sign-up-form
 
 ### Live Demo
-You can view the live Demo [HERE]()
+You can view the live Demo [HERE](https://bchowy.github.io/sign-up-form/)
 
 ## Project Overview
 
@@ -20,4 +20,4 @@ I learned about the 'blur' event listener but used 'keyup' to be more user-frien
 I had to validate the form when the button clicked to submit the form, and it was a bit challenging as I didn't know how to approach the problem, but I found a way to solve it using a loop.
 
 ## Preview
-![image]()
+![fight-club-preview](https://github.com/BChowy/sign-up-form/assets/75831792/3a2496e2-d143-4465-b377-af0561f0d768)
