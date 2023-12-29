@@ -24,6 +24,25 @@ INPUT_FIELDS.forEach(field => {
         validate();
     });
 });
+
+SUBMIT.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    let allValid = true;
+    INPUT_FIELDS.forEach(field => {
+        fieldNum = Array.prototype.indexOf.call(INPUT_FIELDS, field);
+        if (!validate()) {
+            allValid = false;
+            return;
+        }
+    });
+
+    if (allValid) {
+        console.log("submit is valid")
+    }
+    else return;
+});
+
 function checkInput(input, regex, message) {
     if (regex.test(input)) {
         validInput();
